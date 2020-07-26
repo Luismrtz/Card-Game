@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+
+    <title>CARD MATCH</title>
+<link rel="stylesheet" href="/js.00a46daa.css"></head>
+<body>
+    <!--todo keep in top? or wrap body contents?-->
+    <canvas id="canvas1"> </canvas>
+
+
+
+    <h1 class="page-title">CARD MATCH</h1>
+    <div class="overlay-text visible">
+     <span class="overlay-text__big"> Click to Start </span> 
+    </div>
+    <div id="game-over-text" class="overlay-text">
+       <span class="overlay-text__big"> Game Over </span>
+        <span class="overlay-text__small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        Victory
+        <span class="overlay-text__small">Click to Restart</span>
+    </div>
+
+
+
+    <div class="container preload-transitions">
+        <div class="container__score">
+            <div class="container__score--info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="container__score--info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+            <div class="card ">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                     <div class="bubble bubble-2 "></div>
+                     <div class="bubble bubble-3 "></div>
+                     <div class="bubble bubble-4 "></div>
+                     <div class="bubble bubble-5 "></div>
+                     <div class="bubble bubble-6 "></div>
+                     <div class="bubble bubble-7 "></div>
+                     <div class="bubble bubble-8 "></div>
+                 
+                </div>
+             
+                <div class="card-front card-face">
+                    <img draggable="false" class="size card-value" src="/crab.77fd650b.png">
+                 </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card-back card-face">
+
+                     <div class="bubble bubble-1  "></div>
+                     <div class="bubble bubble-2 "></div>
+                     <div class="bubble bubble-3 "></div>
+                     <div class="bubble bubble-4 "></div>
+                     <div class="bubble bubble-5 "></div>
+                     <div class="bubble bubble-6 "></div>
+                     <div class="bubble bubble-7 "></div>
+                     <div class="bubble bubble-8 "></div>
+                
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/crab.77fd650b.png">
+                </div>
+            </div>
+                
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/duck.ef7a3bcd.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/duck.ef7a3bcd.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/jelly.7754c026.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/jelly.7754c026.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/octopus.daecf1f0.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/octopus.daecf1f0.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/seahorse.c4077da4.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/seahorse.c4077da4.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/shark.4e00fa4e.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/shark.4e00fa4e.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/shell.a732e0fd.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/shell.a732e0fd.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div>
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/turtle.75ca5e82.png">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-back card-face">
+                    <div class="bubble bubble-1  "></div>
+                    <div class="bubble bubble-2 "></div>
+                    <div class="bubble bubble-3 "></div>
+                    <div class="bubble bubble-4 "></div>
+                    <div class="bubble bubble-5 "></div>
+                    <div class="bubble bubble-6 "></div>
+                    <div class="bubble bubble-7 "></div>
+                    <div class="bubble bubble-8 "></div> 
+                </div>
+
+                <div class="card-front card-face">
+                     <img draggable="false" class="size card-value" src="/turtle.75ca5e82.png">
+                </div>
+            </div>
+
+
+
+    <script src="/js.00a46daa.js" async=""> </script> <!--load js file at same time as html-->
+    <script> </script>
+</div></body>
+</html>

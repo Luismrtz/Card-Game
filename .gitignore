@@ -1,0 +1,21 @@
+# logs
+logs
+*.logs
+npm-debug.log*
+
+#Runtime data
+pids
+*.pid
+*.seed
+
+#dependency directory
+node_modules
+
+#Optional REPL history
+.node_repl_history
+
+#Cache for Parcel
+.cache
+
+#Apple stuff
+.DS_Store

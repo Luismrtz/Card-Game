@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  // 1rem = 10px   | default is 16px
+    @media (max-width: 600px) {
+font-size: 45%;
+        
+      }
+}
+
+body {
+   // background: radial-gradient(rgb(106, 220, 255), rgb(27, 96, 161));
+   // background: radial-gradient(rgb(43, 105, 124), rgb(19, 37, 54));
+
+    box-sizing: border-box;
+
+}
